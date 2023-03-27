@@ -1,0 +1,101 @@
+.form-container {
+  display: grid;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  margin: 1rem;
+}
+
+#floorError,
+#liftError {
+  font-size: 10px;
+  color: red;
+  margin-top: -1px;
+}
+
+.form {
+  padding: 10px;
+  box-shadow: 5px 5px 6px gray;
+  min-width: 350px;
+  display: grid;
+  border-radius: 10px;
+}
+.form-child {
+  display: grid;
+  gap: 10px;
+}
+.form input {
+  padding: 3px 5px;
+}
+.no_of_floors,
+.no_of_lifts {
+  font-size: 0.9rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+
+.floor-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.floor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  border-bottom: 5px solid #f59e0b;
+}
+
+.lift-container {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+
+.lift {
+  display: flex;
+  width: 70px;
+  height: 90px;
+  border: 1px solid black;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.lift .left-door,
+.lift .right-door {
+  position: absolute;
+  background-color: #f59e0b;
+  width: 50%;
+  height: 100%;
+  transition: 2.5s ease-in-out;
+}
+
+.lift .left-door {
+  left: 0;
+  border-right: 1px solid black;
+}
+
+.lift .right-door {
+  right: 0;
+  border-left: 1px solid black;
+}
